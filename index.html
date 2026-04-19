@@ -4,176 +4,308 @@
     <meta charset="UTF-8">
     <title>Patrick Abisemba Biography</title>
     <style>
-        body {
-            background-color: #f0f2f5;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
+        body { 
+            background-color: #f4f4f4; 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            color: #333; 
         }
-        header {
-            background-color: #8F001A; /* U of Ottawa Garnet */
-            color: white;
-            padding: 40px 20px 80px 20px;
+
+        header { 
+            background-color: #8F001A; 
+            color: white; 
+            padding: 50px 40px; 
+            text-align: left; 
+        }
+
+        .container { 
+            max-width: 1000px; 
+            margin-left: 0; 
+            margin-right: auto;
+            background: white; 
+            padding: 40px; 
+            box-shadow: 5px 0 15px rgba(0,0,0,0.05);
+        }
+
+        /* CENTERED ELEMENTS */
+        .center-wrapper {
             text-align: center;
+            width: 100%;
+            margin: 30px 0;
         }
-        .container {
-            max-width: 700px;
-            margin: -60px auto 50px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+        img.profile-img { 
+            width: 200px; 
+            height: 200px; 
+            border-radius: 50%; 
+            border: 6px solid #8F001A; 
+            object-fit: cover; 
+            display: inline-block;
+        }
+
+        /* THE QUOTE - Uottawa Styled */
+        .uottawa-quote {
             text-align: center;
+            padding: 40px 20px;
+            background-color: #fff9fa;
+            border-top: 5px solid #8F001A;
+            border-bottom: 5px solid #8F001A;
+            margin: 50px 0;
         }
-        img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            border: 5px solid white;
-            object-fit: cover;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        h2 {
+
+        .uottawa-quote p {
+            font-style: italic;
+            font-size: 1.4em;
             color: #8F001A;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* MUSICAL TRIBUTE - Centered */
+        .music-box {
+            background-color: white; 
+            border: 2px solid #8F001A; 
+            padding: 30px; 
+            border-radius: 15px;
+            display: inline-block; 
+            width: 100%;
+            max-width: 550px;
+        }
+
+        /* SIDE ALIGNED ELEMENTS (LEFT BORDER) */
+        h2 { 
+            color: #8F001A; 
+            border-bottom: 2px solid #8F001A; 
+            padding-bottom: 8px; 
+            margin-top: 45px;
             text-align: left;
         }
-        p, ul {
-            text-align: left;
-            line-height: 1.6;
+
+        p, ul, li { 
+            line-height: 1.8; 
+            text-align: left; 
+            margin-bottom: 15px;
         }
+
+        .milestone-card { 
+            background-color: #fff9fa; 
+            border-left: 8px solid #8F001A; 
+            padding: 25px; 
+            margin: 30px 0; 
+        }
+
+        .contact-card { 
+            background-color: #f9f9f9; 
+            border: 1px solid #ccc; 
+            padding: 25px; 
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .btn { 
+            display: inline-block; 
+            padding: 12px 25px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            margin: 10px 10px 10px 0;
+            color: white;
+        }
+
+        .btn-amazon { background-color: #FF9900; color: black; }
+        .btn-linkedin { background-color: #0077b5; }
+        .btn-uottawa { background-color: #8F001A; }
+
+        .lang-btns { margin-top: 40px; border-top: 1px solid #ddd; padding-top: 20px; }
+        .btn-lang { padding: 10px 20px; margin-right: 10px; cursor: pointer; background: #333; color: white; border: none; border-radius: 4px; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Patrick Abisemba</h1>
-        <p>PhD Researcher | University of Ottawa</p>
+        <h1 id="header-name">Patrick Abisemba</h1>
+        <p id="header-title">PhD Researcher | University of Ottawa</p>
     </header>
 
     <div class="container">
-        <img src="profile.jpg.png" alt="Patrick Abisemba">
         
-        <h2>Biography</h2>
-        <p>Patrick Mmelanya Abisemba, born on July 17th, 1982, is a researcher specializing in International Development at the University of Ottawa. This website highlights his academic journey and professional contributions to global studies.</p>
-        
-        <h2>Key Research Areas</h2>
-        <ul>
-            <li>International Development</li>
-            <li>Policy Analysis</li>
-            <li>Global Studies</li>
+        <div class="center-wrapper">
+            <img src="profile.jpg.png" alt="Patrick Abisemba" class="profile-img">
+        </div>
+
+        <h2 id="title-bio">Biography</h2>
+        <p id="bio-text">Patrick Mmelanya Abisemba, born on July 17th, 1982, is a researcher specializing in International Development at the University of Ottawa. This website highlights his academic journey and professional contributions to global studies.</p>
+
+        <h2 id="title-research">Key Research Areas</h2>
+        <ul id="res-list">
+            <li id="res-1">International Development</li>
+            <li id="res-2">Policy Analysis</li>
+            <li id="res-3">Global Studies</li>
         </ul>
+
+        <h2 id="title-edu">Education & Honors</h2>
+        <p id="edu-phd"><strong>PhD in International Development</strong> (In Progress)<br>University of Ottawa | 2022 – Present</p>
+        <p id="edu-bach"><strong>Honours Bachelor of Social Sciences</strong> (Magna Cum Laude)<br>International Development and Globalization | University of Ottawa, 2021</p>
+
+        <div class="milestone-card">
+            <h2 id="title-milestone" style="margin: 0; border: none;">2026 Research Milestone</h2>
+            <p id="milestone-text">Patrick is currently commencing his doctoral thesis research this year. His work continues to build on his honors-level foundation in global policy and international studies.</p>
+        </div>
+
+        <h2 id="title-vision">Future Vision: Global Educator</h2>
+        <p id="vision-text">With a deep-seated passion for academia and international development, Patrick’s ultimate goal is to become a Professor. He aspires to share his research and expertise by teaching at universities all around the world.</p>
+
+        <h2 id="title-books">Published Books</h2>
+        <p id="books-desc">Patrick is an accomplished author. His published works explore critical themes in Social Sciences and International Development, available for global readers on Amazon.</p>
+        <a href="https://www.amazon.com/s?k=Patrick+abisemba" target="_blank" class="btn btn-amazon" id="btn-amazon-text">View Books on Amazon</a>
+
+        <h2 id="title-prof">Connect & Professional Profiles</h2>
+        <div style="text-align: left;">
+            <a href="https://ca.linkedin.com/in/pabisemba" target="_blank" class="btn btn-linkedin" id="btn-linkedin-text">LinkedIn Profile</a>
+            <a href="https://uniweb.uottawa.ca/view/profile/members/7041" target="_blank" class="btn btn-uottawa" id="btn-uottawa-text">uOttawa Uniweb Profile</a>
+        </div>
+
+        <h2 id="title-connect">Connect with Patrick</h2>
+        <div class="contact-card">
+            <p><strong id="label-supervisor">PhD Supervisor:</strong> <a href="https://uniweb.uottawa.ca/view/profile/members/4333?lang=en" target="_blank" style="color:#8F001A; font-weight:bold;">Dr. Christine Gibb</a></p>
+            <p><strong id="label-email">Email:</strong> <a href="mailto:Pabisemba@gmail.com" style="color:#8F001A; font-weight:bold;">Pabisemba@gmail.com</a></p>
+            <p><strong id="label-phone">Phone:</strong> <a href="tel:+16133021180" style="color:#8F001A; font-weight:bold;">+1 (613) 302-1180</a></p>
+        </div>
+
+        <div class="uottawa-quote">
+            <p id="quote-text">"Dedicated to understanding the complex dynamics of global development to foster a more equitable future."</p>
+        </div>
+
+        <div class="center-wrapper">
+            <h2 id="title-music" style="text-align:center; border:none;">Musical Tribute</h2>
+            <div class="music-box">
+                <h3 id="music-song-title" style="color:#8F001A; margin-top:0;">"Professeur Abisemba"</h3>
+                <p id="music-subtitle" style="font-style:italic; color:#666;">From Kinshasa to the World</p>
+                <audio controls style="width: 100%;"><source src="Patrick.mp3" type="audio/mpeg"></audio>
+            </div>
+        </div>
+
+        <div class="lang-btns">
+            <p id="lang-label"><strong>Select Language:</strong></p>
+            <button class="btn-lang" onclick="changeLang('en')">English</button>
+            <button class="btn-lang" onclick="changeLang('sw')">Kiswahili</button>
+            <button class="btn-lang" onclick="changeLang('fr')">Français</button>
+        </div>
+
+        <p style="font-size: 0.8em; color: #888; margin-top: 60px;">© 2026 Patrick Mmelanya Abisemba | University of Ottawa</p>
     </div>
 
+    <script>
+    function changeLang(lang) {
+        const translations = {
+            en: {
+                headerT: "PhD Researcher | University of Ottawa",
+                bioH: "Biography",
+                bioT: "Patrick Mmelanya Abisemba, born on July 17th, 1982, is a researcher specializing in International Development at the University of Ottawa. This website highlights his academic journey and professional contributions to global studies.",
+                resH: "Key Research Areas",
+                res1: "International Development", res2: "Policy Analysis", res3: "Global Studies",
+                eduH: "Education & Honors",
+                eduPhd: "<strong>PhD in International Development</strong> (In Progress)<br>University of Ottawa | 2023 – Present",
+                eduBach: "<strong>Honours Bachelor of Social Sciences</strong> (Magna Cum Laude)<br>International Development and Globalization | University of Ottawa, 2021",
+                mileH: "2026 Research Milestone",
+                mileT: "Patrick is currently commencing his doctoral thesis research this year. His work continues to build on his honors-level foundation in global policy and international studies.",
+                visH: "Future Vision: Global Educator",
+                visT: "With a deep-seated passion for academia and international development, Patrick’s ultimate goal is to become a Professor. He aspires to share his research and expertise by teaching at universities all around the world.",
+                bookH: "Published Books",
+                bookT: "Patrick is an accomplished author. His published works explore critical themes in Social Sciences and International Development, available for global readers on Amazon.",
+                btnAmz: "View Books on Amazon",
+                profH: "Connect & Professional Profiles",
+                btnLin: "LinkedIn Profile",
+                btnUot: "uOttawa Uniweb Profile",
+                conH: "Connect with Patrick",
+                labSup: "PhD Supervisor:", labEma: "Email:", labPho: "Phone:",
+                quote: '"Dedicated to understanding the complex dynamics of global development to foster a more equitable future."',
+                musH: "Musical Tribute", musSub: "From Kinshasa to the World",
+                langL: "<strong>Select Language:</strong>"
+            },
+            sw: {
+                headerT: "Mtafiti wa PhD | Chuo Kikuu cha Ottawa",
+                bioH: "Wasifu",
+                bioT: "Patrick Mmelanya Abisemba, aliyezaliwa mnamo Julai 17, 1982, ni mtafiti aliyebobea katika Maendeleo ya Kimataifa katika Chuo Kikuu cha Ottawa. Tovuti hii inaangazia safari yake ya kielimu na michango yake ya kitaaluma katika masomo ya kimataifa.",
+                resH: "Maeneo Muhimu ya Utafiti",
+                res1: "Maendeleo ya Kimataifa", res2: "Uchambuzi wa Sera", res3: "Masomo ya Ulimwengu",
+                eduH: "Elimu na Tuzo",
+                eduPhd: "<strong>PhD katika Maendeleo ya Kimataifa</strong> (Inaendelea)<br>Chuo Kikuu cha Ottawa | 2023 – Sasa",
+                eduBach: "<strong>Shahada ya Uzamili ya Sayansi ya Jamii</strong> (Magna Cum Laude)<br>Maendeleo ya Kimataifa na Utandawazi | Chuo Kikuu cha Ottawa, 2021",
+                mileH: "Hatua ya Utafiti ya 2026",
+                mileT: "Patrick kwa sasa anaanza utafiti wake wa nadharia ya udaktari mwaka huu. Kazi yake inaendelea kujenga juu ya msingi wake wa kiwango cha heshima katika sera ya kimataifa na masomo ya kimataifa.",
+                visH: "Maono ya Baadaye: Mwalimu wa Ulimwengu",
+                visT: "Akiwa na shauku kubwa ya taaluma na maendeleo ya kimataifa, lengo kuu la Patrick ni kuwa Profesa. Anatamani kushiriki utafiti na utaalamu wake kwa kufundisha katika vyuo vikuu ulimwenguni kote.",
+                bookH: "Vitabu Vilivyochapishwa",
+                bookT: "Patrick ni mwandishi aliyekamilika. Kazi zake zilizochapishwa huchunguza mada muhimu katika Sayansi ya Jamii na Maendeleo ya Kimataifa, zinazopatikana kwa wasomaji wa kimataifa kwenye Amazon.",
+                btnAmz: "Angalia Vitabu kwenye Amazon",
+                profH: "Wasifu wa Kitaalamu",
+                btnLin: "Wasifu wa LinkedIn",
+                btnUot: "Wasifu wa uOttawa Uniweb",
+                conH: "Wasiliana na Patrick",
+                labSup: "Msimamizi wa PhD:", labEma: "Barua pepe:", labPho: "Simu:",
+                quote: '"Amejitolea kuelewa mienendo changamano ya maendeleo ya kimataifa ili kukuza mustakabali wenye usawa zaidi."',
+                musH: "Tuzo ya Muziki", musSub: "Kutoka Kinshasa hadi Ulimwenguni",
+                langL: "<strong>Chagua Lugha:</strong>"
+            },
+            fr: {
+                headerT: "Chercheur au PhD | Université d'Ottawa",
+                bioH: "Biographie",
+                bioT: "Patrick Mmelanya Abisemba, né le 17 juillet 1982, est un chercheur spécialisé en développement international à l'Université d'Ottawa. Ce site met en lumière son parcours académique et ses contributions professionnelles aux études mondiales.",
+                resH: "Domaines de recherche",
+                res1: "Développement International", res2: "Analyse des Politiques", res3: "Études Mondiales",
+                eduH: "Éducation et Honneurs",
+                eduPhd: "<strong>Doctorat en développement international</strong> (En cours)<br>Université d'Ottawa | 2023 – Présent",
+                eduBach: "<strong>Baccalauréat spécialisé en sciences sociales</strong> (Magna Cum Laude)<br>Développement international et mondialisation | Université d'Ottawa, 2021",
+                mileH: "Jalon de recherche 2026",
+                mileT: "Patrick commence actuellement ses recherches de thèse de doctorat cette année. Son travail continue de s'appuyer sur sa base de niveau spécialisé en politique mondiale et en études internationales.",
+                visH: "Vision d'avenir : Éducateur mondial",
+                visT: "Passionné par le milieu universitaire et le développement international, l'objectif ultime de Patrick est de devenir professeur. Il aspire à partager ses recherches et son expertise en enseignant dans des universités du monde entier.",
+                bookH: "Livres Publiés",
+                bookT: "Patrick est un auteur accompli. Ses ouvrages publiés explorent des thèmes critiques en sciences sociales et en développement international, disponibles pour les lecteurs du monde entier sur Amazon.",
+                btnAmz: "Voir les livres sur Amazon",
+                profH: "Profils Professionnels",
+                btnLin: "Profil LinkedIn",
+                btnUot: "Profil Uniweb uOttawa",
+                conH: "Contacter Patrick",
+                labSup: "Superviseure du PhD:", labEma: "Email:", labPho: "Téléphone:",
+                quote: '"Dédié à la compréhension de la dynamique complexe du développement mondial pour favoriser un avenir plus équitable."',
+                musH: "Hommage Musical", musSub: "De Kinshasa au Monde",
+                langL: "<strong>Choisir la langue:</strong>"
+            }
+        };
+
+        const s = translations[lang];
+        document.getElementById('header-title').innerText = s.headerT;
+        document.getElementById('title-bio').innerText = s.bioH;
+        document.getElementById('bio-text').innerText = s.bioT;
+        document.getElementById('title-research').innerText = s.resH;
+        document.getElementById('res-1').innerText = s.res1;
+        document.getElementById('res-2').innerText = s.res2;
+        document.getElementById('res-3').innerText = s.res3;
+        document.getElementById('title-edu').innerText = s.eduH;
+        document.getElementById('edu-phd').innerHTML = s.eduPhd;
+        document.getElementById('edu-bach').innerHTML = s.eduBach;
+        document.getElementById('title-milestone').innerText = s.mileH;
+        document.getElementById('milestone-text').innerText = s.mileT;
+        document.getElementById('title-vision').innerText = s.visH;
+        document.getElementById('vision-text').innerText = s.visT;
+        document.getElementById('title-books').innerText = s.bookH;
+        document.getElementById('books-desc').innerText = s.bookT;
+        document.getElementById('btn-amazon-text').innerText = s.btnAmz;
+        document.getElementById('title-prof').innerText = s.profH;
+        document.getElementById('btn-linkedin-text').innerText = s.btnLin;
+        document.getElementById('btn-uottawa-text').innerText = s.btnUot;
+        document.getElementById('title-connect').innerText = s.conH;
+        document.getElementById('label-supervisor').innerText = s.labSup;
+        document.getElementById('label-email').innerText = s.labEma;
+        document.getElementById('label-phone').innerText = s.labPho;
+        document.getElementById('quote-text').innerText = s.quote;
+        document.getElementById('title-music').innerText = s.musH;
+        document.getElementById('music-subtitle').innerText = s.musSub;
+        document.getElementById('lang-label').innerHTML = s.langL;
+    }
+    </script>
 </body>
 </html>
-
- <h2>Education & Honors</h2>
-        <p><strong>PhD in International Development</strong> (In Progress)<br>
-        University of Ottawa | 2022 – Present</p>
-        
-        <p><strong>Honours Bachelor of Social Sciences</strong> (Magna Cum Laude)<br>
-        International Development and Globalization | University of Ottawa, 2021</p>
-        <p style="font-size: 0.9em; color: #555;">*Graduated with High Distinction (Magna Cum Laude).</p>
-
-        <div style="background-color: #fff9fa; border-left: 5px solid #8F001A; padding: 20px; margin: 20px 0;">
-            <h2 style="margin-top: 0; border: none;">2026 Research Milestone</h2>
-            <p><strong>Doctoral Thesis Project</strong><br>
-            Patrick is currently commencing his doctoral thesis research this year. His work continues to build on his honors-level foundation in global policy and international studies.</p>
-        </div>
-
-<div style="margin: 30px 0;">
-            <h2>Future Vision: Global Educator</h2>
-            <p>With a deep-seated passion for academia and international development, Patrick’s ultimate goal is to become a <strong>Professor</strong>. He aspires to share his research and expertise by teaching at universities all around the world, fostering the next generation of global leaders.</p>
-        </div>
-
-        <h2>Published Books</h2>
-        <div style="background-color: #fdfdfd; border: 1px solid #ddd; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
-            <p><strong>Available on Amazon</strong></p>
-            <p>Patrick is an accomplished author. His published works explore critical themes in Social Sciences and International Development, available for global readers on Amazon.</p>
-            <a href="https://www.amazon.com/s?k=Patrick+abisemba" target="_blank" style="display: inline-block; background-color: #FF9900; color: black; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.9em;">
-                View Books on Amazon
-            </a>
-        </div>
-
-        <h2>Connect & Professional Profiles</h2>
-        <div style="text-align: center; margin: 30px 0;">
-            <a href="https://ca.linkedin.com/in/pabisemba" target="_blank" style="display: inline-block; background-color: #0077b5; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 5px;">
-                LinkedIn Profile
-            </a>
-            <a href="https://uniweb.uottawa.ca/view/profile/members/7041" target="_blank" style="display: inline-block; background-color: #8F001A; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 5px;">
-                uOttawa Uniweb Profile
-            </a>
-        </div>
-
-<h2>Connect with Patrick</h2>
-        <p>To discuss research, global teaching opportunities, or professional projects, please reach out via the following contact details:</p>
-        
-        <div style="background-color: #fdfdfd; border: 1px solid #ddd; padding: 25px; border-radius: 8px; margin: 20px 0;">
-            <p style="margin: 10px 0;">
-                <strong>PhD Supervisor:</strong> 
-                <a href="https://uniweb.uottawa.ca/view/profile/members/4333?lang=en" target="_blank" style="color: #8F001A; text-decoration: none; font-weight: bold;">Dr. Christine Gibb</a>
-            </p>
-            <p style="margin: 10px 0;">
-                <strong>Email:</strong> 
-                <a href="mailto:Pabisemba@gmail.com" style="color: #8F001A; text-decoration: none; font-weight: bold;">Pabisemba@gmail.com</a>
-            </p>
-            <p style="margin: 10px 0;">
-                <strong>Phone:</strong> 
-                <a href="tel:+16133021180" style="color: #8F001A; text-decoration: none; font-weight: bold;">+1 (613) 302-1180</a>
-            </p>
-        </div>
-
-        <div style="text-align: center; padding: 40px 20px; background-color: #f9f9f9; border-radius: 10px; border-top: 4px solid #8F001A; margin-top: 40px;">
-            <p style="font-style: italic; font-size: 1.3em; color: #333; max-width: 550px; margin: 0 auto; line-height: 1.6;">
-                "Dedicated to understanding the complex dynamics of global development to foster a more equitable future."
-            </p>
-        </div>
-
-    
-   <div style="text-align: center; margin-top: 40px; padding: 30px; background-color: #fff9fa; border: 2px solid #8F001A; border-radius: 15px;">
-    <h3 style="color: #8F001A; margin-top: 0;">Musical Tribute: "Professeur Abisemba"</h3>
-    <p style="font-style: italic; color: #555;">From Kinshasa to the World</p>
-    
-    <audio controls style="width: 100%; max-width: 500px; margin-top: 10px;">
-        <source src="Patrick.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <div style="margin-top: 20px;">
-        <p style="font-size: 0.8em; color: #888;">If the player doesn't load, use the direct link:</p>
-        <a href="https://administrative-bronze-gosdiumjct.edgeone.app/Professeur%20Abisemba%20(1).mp3" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #8F001A; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
-            Listen to the Song
-        </a>
-    </div>
-</div>
-div style="text-align: center; margin-top: 30px;">
-    <button onclick="changeLang('en')" style="padding: 10px; margin: 5px;">English</button>
-    <button onclick="changeLang('sw')" style="padding: 10px; margin: 5px;">Kiswahili</button>
-    <button onclick="changeLang('fr')" style="padding: 10px; margin: 5px;">Français</button>
-</div>
-
-<script>
-function changeLang(lang) {
-    const bio = document.getElementById('bio-text');
-    
-    if (lang === 'en') {
-        bio.innerHTML = "<p>Patrick Abisemba was born on...</p>";
-    } else if (lang === 'sw') {
-        bio.innerHTML = "<p>Patrick Abisemba alizaliwa mnamo...</p>";
-    } else if (lang === 'fr') {
-        bio.innerHTML = "<p>Patrick Abisemba est né le...</p>";
-    }
-}
-</script>
-
-
-<hr style="border: 0; border-top: 1px solid #eee; margin: 50px 0 20px 0;">
-        <p style="font-size: 0.85em; color: #777; text-align: center; padding-bottom: 20px;">
-            © 2026 Patrick Mmelanya Abisemba | University of Ottawa
-        </p>
- 
-        
