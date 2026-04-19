@@ -150,6 +150,26 @@
         </a>
     </div>
 </div>
+div style="text-align: center; margin-top: 30px;">
+    <button onclick="changeLang('en')" style="padding: 10px; margin: 5px;">English</button>
+    <button onclick="changeLang('sw')" style="padding: 10px; margin: 5px;">Kiswahili</button>
+    <button onclick="changeLang('fr')" style="padding: 10px; margin: 5px;">Français</button>
+</div>
+
+<script>
+function changeLang(lang) {
+    const bio = document.getElementById('bio-text');
+    
+    if (lang === 'en') {
+        bio.innerHTML = "<p>Patrick Abisemba was born on...</p>";
+    } else if (lang === 'sw') {
+        bio.innerHTML = "<p>Patrick Abisemba alizaliwa mnamo...</p>";
+    } else if (lang === 'fr') {
+        bio.innerHTML = "<p>Patrick Abisemba est né le...</p>";
+    }
+}
+</script>
+
 
 <hr style="border: 0; border-top: 1px solid #eee; margin: 50px 0 20px 0;">
         <p style="font-size: 0.85em; color: #777; text-align: center; padding-bottom: 20px;">
